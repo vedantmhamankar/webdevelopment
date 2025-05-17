@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#1B1B1B;
+        }
+        #mainbody{
+            background-color:#3D3D3D;
+            height:400px;
+            width:500px;
+            border: #1b1b1b solid 1px;
+            border-radius:10px;
+            margin-top:100px;
+            margin-left:500px;
+        }
+        #inputcity{
+            height:30px;
+            width: 100px;
+            margin-top:40px;
+            margin-left: 40px;
+             border-radius:10px;
+        }
+        #currentloc{
+            background-color: #1B1B1B;
+            height:50px;
+            width:70px;
+            margin-top:-120px;
+            margin-left:390px;
+              border-radius:10px;
+            border:#1B1B1B solid 1px;
+        }
+        #search{
+               height:30px;
+            width: 50px;
+            background-color: #1B1B1B;
+            margin-top:40px;
+            margin-left: 40px;
+            border: #1B1B1B solid 1px;
+             border-radius:10px;
+        }
+        #report{
+            width:400px;
+            height:200px;
+            border-radius: 10px;
+            border: white solid 1px;
+            margin-left:50px;
+            margin-top:20px;
+        }
+        #weatherIcon{
+            height: 120px;
+            width: 80px;
+            margin-top: 20px;
+            margin-left: 30px;
+            display:none;
+        }
+
+        #info{
+            color: #ffffff;
+            display: flex;
+            margin-top:0px;
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainbody">
+        <input id="inputcity" type="text" placeholder="Enter city">
+        <button id="search"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+        <button id="currentloc" placeholder="current location"><i class="fa-solid fa-location-crosshairs fa-lg" style="color: #ffffff;"></i></button>
+         <div id="report">
+            <img id="weatherIcon">
+            <span id="info">
+            </span>
+         </div>
+    </div>
+</body>
+<script src="weather.js"></script>
+</html>

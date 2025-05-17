@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: black;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    #todo {
+      background-color: black;
+      border: white solid 2px;
+      width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    #todoinput {
+      background-color: rgba(128, 128, 128, 0.2);
+      color: white;
+      border: white solid 1px;
+      height: 50px;
+      width: 380px;
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    #todoinput::placeholder {
+      color: white;
+      text-align: center;
+      opacity: 0.3;
+    }
+
+    #addtask {
+      background-color: red;
+      color: white;
+      height: 50px;
+      width: 100px;
+      border-radius: 8px;
+      border: white solid 1px;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    #addtask:hover {
+      background-color: rgba(123, 4, 4, 0.7);
+    }
+
+    #task-input-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    #todolist {
+      list-style: none;
+      padding: 0;
+    }
+
+    #todolist li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(128, 128, 128, 0.2);
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      border: 1px solid white;
+      border-radius: 6px;
+    }
+
+    #todolist li.completed h5 {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+
+    #todolist h5 {
+      margin: 0;
+      font-weight: normal;
+    }
+
+    #todolist button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #todolist button:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <div id="todo">
+    <div id="task-input-container">
+      <input id="todoinput" type="text" placeholder="Add new task">
+      <button id="addtask">Add Task</button>
+    </div>
+    <ul id="todolist"></ul>
+  </div>
+
+  <script src="todoScript.js"></script>
+</body>
+</html>
